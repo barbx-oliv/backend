@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <footer th:fragment="footer" class="senai-footer">
+        <div class="senai-shell">
+            <p class="senai-footer-text">© <span th:text="${#dates.format(#dates.createNow(), 'yyyy')}"></span>
+            SENAI-SP. Todos os direitos reservdos.</p>
+        </div>
+    </footer>
+</body>
+</html>

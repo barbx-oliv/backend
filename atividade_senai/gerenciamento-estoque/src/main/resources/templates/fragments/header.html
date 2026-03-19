@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="bt-pr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+</head>
+<body>
+    <header th:fragment="header" class="senai-header">
+        <div class="senai-shell" th:href="@{/}">
+            <a class="senai-brand" th:href="@{/}">
+                <img class="senai-logo" th:src="@{/img/senai.png}" alt="SENAI-SP"/>
+                    <span class="senai-brand-text">Sistema de Estoque e Patrimônio</span>
+            </a>
+            <nav class="senai-nav" aria-label="Navegação Principal">
+                <a class="senai-link" th:href="@{/cadastro}"></a>
+                <a class="senai-button" th:href="@{/login}"></a>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
