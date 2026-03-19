@@ -11,13 +11,12 @@ import java.util.Optional;
 public class FuncionarioService {
    
     @Autowired
-    private FuncionarioRepository funcionarioRepository; // Minúsculo
+    private FuncionarioRepository funcionarioRepository; 
 
     @Autowired
-    private FuncionarioAutenticadoRepository funcionarioAutenticadoRepository; // Minúsculo
+    private FuncionarioAutenticadoRepository funcionarioAutenticadoRepository; 
 
     public String cadastrar(String nome, String nif, String senha) {
-        // Agora o nome do método bate exatamente com a assinatura que criamos no Repository
         boolean autorizado = funcionarioAutenticadoRepository.existsByNifAndNomeAndAtivoTrue(nif, nome);
        
         if (!autorizado) {
